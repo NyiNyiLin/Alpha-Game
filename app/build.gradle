@@ -20,10 +20,26 @@ android {
     testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
   }
 
+  signingConfigs {
+    key {
+      storeFile file("../keystore/alpha_game.jks")
+      storePassword "alphagame"
+      keyAlias "release"
+      keyPassword "release"
+      v2SigningEnabled true
+    }
+  }
+
   buildTypes {
     release {
+      signingConfig signingConfigs.key
       minifyEnabled false
+      debuggable false
       proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    }
+    debug{
+      signingConfig signingConfigs.key
+      debuggable true
     }
   }
 
