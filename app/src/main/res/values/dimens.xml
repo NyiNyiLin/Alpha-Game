@@ -1,0 +1,4 @@
+<resources>
+  <dimen name="fab_margin">16dp</dimen>
+  <dimen name="padding_tic_tac_toe">16dp</dimen>
+</resources>

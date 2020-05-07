@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_constraintDimensionRatio="1:1">
+
+  <View
+      android:id="@+id/dividerFirstVertical"
+      android:layout_width="1dp"
+      android:layout_height="match_parent"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/dividerSecondVertical"
+      android:background="@color/colorGrayDark"/>
+
+  <View
+      android:id="@+id/dividerSecondVertical"
+      android:layout_width="1dp"
+      android:layout_height="match_parent"
+      app:layout_constraintStart_toEndOf="@id/dividerFirstVertical"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:background="@color/colorGrayDark"/>
+
+  <View
+      android:id="@+id/dividerFirstHorizontal"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toTopOf="@id/dividerSecondHorizontal"
+      android:background="@color/colorGrayDark"/>
+
+  <View
+      android:id="@+id/dividerSecondHorizontal"
+      android:layout_width="match_parent"
+      android:layout_height="1dp"
+      app:layout_constraintTop_toBottomOf="@id/dividerFirstHorizontal"
+      app:layout_constraintBottom_toBottomOf="parent"
+      android:background="@color/colorGrayDark"/>
+
+  <ImageView
+      android:id="@+id/ivFirst"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/dividerFirstVertical"
+      app:layout_constraintBottom_toBottomOf="@id/dividerFirstHorizontal"
+      app:layout_constraintTop_toTopOf="parent"
+      android:scaleType="fitCenter"
+      android:padding="@dimen/padding_tic_tac_toe"/>
+
+  <ImageView
+      android:id="@+id/ivSecond"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintStart_toEndOf="@id/dividerFirstVertical"
+      app:layout_constraintEnd_toStartOf="@id/dividerSecondVertical"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toBottomOf="@id/dividerFirstHorizontal"
+      android:padding="@dimen/padding_tic_tac_toe"/>
+
+  <ImageView
+      android:id="@+id/ivThird"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toEndOf="@id/dividerSecondVertical"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toTopOf="@id/dividerFirstHorizontal"
+      android:padding="@dimen/padding_tic_tac_toe"/>
+
+  <ImageView
+      android:id="@+id/ivFourth"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/dividerFirstVertical"
+      app:layout_constraintBottom_toTopOf="@id/dividerSecondHorizontal"
+      app:layout_constraintTop_toBottomOf="@id/dividerFirstHorizontal"
+      android:scaleType="fitCenter"
+      android:padding="@dimen/padding_tic_tac_toe"/>
+
+  <ImageView
+      android:id="@+id/ivFifth"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintStart_toEndOf="@id/dividerFirstVertical"
+      app:layout_constraintEnd_toStartOf="@id/dividerSecondVertical"
+      app:layout_constraintBottom_toTopOf="@id/dividerSecondHorizontal"
+      app:layout_constraintTop_toBottomOf="@id/dividerFirstHorizontal"
+      android:padding="@dimen/padding_tic_tac_toe"/>
+
+  <ImageView
+      android:id="@+id/ivSixth"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintStart_toEndOf="@id/dividerSecondVertical"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toTopOf="@id/dividerSecondHorizontal"
+      app:layout_constraintTop_toBottomOf="@id/dividerFirstHorizontal"
+      android:padding="@dimen/padding_tic_tac_toe"/>
+
+  <ImageView
+      android:id="@+id/ivSeventh"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toStartOf="@id/dividerFirstVertical"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/dividerSecondHorizontal"
+      android:scaleType="fitCenter"
+      android:padding="@dimen/padding_tic_tac_toe"/>
+
+  <ImageView
+      android:id="@+id/ivEighth"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintStart_toEndOf="@id/dividerFirstVertical"
+      app:layout_constraintEnd_toStartOf="@id/dividerSecondVertical"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/dividerSecondHorizontal"
+      android:padding="@dimen/padding_tic_tac_toe"/>
+
+  <ImageView
+      android:id="@+id/ivNinth"
+      android:layout_width="0dp"
+      android:layout_height="0dp"
+      app:layout_constraintStart_toEndOf="@id/dividerSecondVertical"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/dividerSecondHorizontal"
+      android:padding="@dimen/padding_tic_tac_toe"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
